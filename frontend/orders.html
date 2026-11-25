@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order | CAFINITY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">CAFINITY<span>.</span></h2>
+        <a href="index.html" class="nav-link">Home</a>
+    </nav>
+
+    <section class="cart-header">
+        <h1>Track Your Order</h1>
+        <p>Follow your cafeteria order status.</p>
+    </section>
+
+    <section class="checkout-container">
+
+        <div class="checkout-card">
+            <h2>Order Details</h2>
+
+            <p>Order Token: <strong id="orderToken">Loading...</strong></p>
+            <p>Payment: <strong id="paymentStatus">Loading...</strong></p>
+            <p>Total: <strong id="orderTotal">Loading...</strong></p>
+
+            <hr>
+
+            <h3>Items</h3>
+            <div id="orderItems"></div>
+
+            <hr>
+
+            <h3>Order Progress</h3>
+            <div id="orderStatus" class="order-status">
+                Loading status...
+            </div>
+
+            <button id="refreshBtn" class="btn full-btn">
+                Refresh Status
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="js/orders.js"></script>
+</body>
+</html>

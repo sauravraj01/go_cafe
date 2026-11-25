@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Menu | CAFINITY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">CAFINITY<span>.</span></h2>
+        <a href="admin.html" class="nav-link">Dashboard</a>
+    </nav>
+
+    <section class="cart-header">
+        <h1>Manage Menu</h1>
+        <p>Add, edit and manage cafeteria food items.</p>
+    </section>
+
+    <section class="checkout-container">
+
+        <div class="checkout-card">
+            <h2 id="formTitle">Add New Food Item</h2>
+
+            <form id="menuForm">
+
+                <input type="hidden" id="itemID">
+
+                <label>Food Name</label>
+                <input type="text" id="itemName" required>
+
+                <label>Category</label>
+                <select id="categoryID" required>
+                    <option value="">Select Category</option>
+                </select>
+
+                <label>Price</label>
+                <input type="number" id="price" min="1" required>
+
+                <label>Description</label>
+                <textarea id="description" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="available" checked>
+                    Available
+                </label>
+
+                <button type="submit" class="btn full-btn" id="saveBtn">
+                    Add Food Item
+                </button>
+
+                <button type="button" id="cancelBtn" class="btn full-btn">
+                    Cancel Edit
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+        </div>
+
+        <div class="checkout-card">
+            <h2>Existing Food Items</h2>
+            <div id="menuList">Loading...</div>
+        </div>
+
+    </section>
+
+    <script src="js/admin-menu.js"></script>
+</body>
+</html>

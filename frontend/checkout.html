@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | CAFINITY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">CAFINITY<span>.</span></h2>
+        <a href="my-orders.html" class="nav-link">My Orders</a>
+        <a href="cart.html" class="nav-link">Back to Cart</a>
+    </nav>
+
+    <section class="cart-header">
+        <h1>Checkout</h1>
+        <p>Review your order and confirm payment.</p>
+    </section>
+
+    <section class="checkout-container">
+
+        <div class="checkout-card">
+            <h2>Order Summary</h2>
+
+            <div id="checkoutItems">
+                Loading...
+            </div>
+
+            <div class="checkout-total">
+                Total: <span id="checkoutTotal">₹0</span>
+            </div>
+
+            <button id="placeOrderBtn" class="btn full-btn">
+                Place Order
+            </button>
+
+            <button id="payBtn" class="btn full-btn" disabled>
+                Pay Now
+            </button>
+
+            <p id="checkoutMessage"></p>
+        </div>
+
+        <div id="successCard" class="checkout-card" hidden>
+            <h2>Order Confirmed!</h2>
+            <p>Your order has been placed successfully.</p>
+
+            <h3>Your Order Token</h3>
+            <h1 id="orderToken"></h1>
+
+            <p id="paymentStatus"></p>
+
+            <a href="orders.html" class="btn full-btn">
+                Track My Order
+            </a>
+        </div>
+
+    </section>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

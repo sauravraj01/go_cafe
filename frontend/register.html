@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CAFINITY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2 class="logo">CAFINITY<span>.</span></h2>
+
+            <h1>Create Account</h1>
+            <p class="muted">Join CAFINITY and order your favourite food.</p>
+
+            <form id="registerForm">
+
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Create password" required>
+
+                <button type="submit" class="btn full-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+            <p class="auth-footer">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu | CAFINITY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+<nav class="navbar">
+    <h2 class="logo">CAFINITY<span>.</span></h2>
+
+    <div>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="my-orders.html" class="nav-link">My Orders</a>
+        <a href="cart.html" class="btn">My Cart 🛒</a>
+    </div>
+</nav>
+
+
+    <section class="menu-header">
+        <p class="tagline">FRESH FROM YOUR CAMPUS CAFETERIA</p>
+        <h1>Explore Our Menu</h1>
+        <p>Find your favourites and order in just a few clicks.</p>
+    </section>
+
+    <section class="menu-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search food items..."
+        >
+
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+        </select>
+
+    </section>
+
+    <section class="menu-container" id="menuContainer">
+        <p>Loading menu...</p>
+    </section>
+
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

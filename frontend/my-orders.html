@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | CAFINITY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">CAFINITY<span>.</span></h2>
+        <div>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+        </div>
+    </nav>
+
+    <section class="cart-header">
+        <h1>My Orders</h1>
+        <p>View all your previous and current orders.</p>
+    </section>
+
+    <section class="checkout-container">
+        <div class="checkout-card">
+            <button id="refreshBtn" class="btn">Refresh Orders</button>
+            <p id="message"></p>
+            <div id="ordersContainer">Loading orders...</div>
+        </div>
+    </section>
+
+    <script src="js/my-orders.js"></script>
+</body>
+</html>
